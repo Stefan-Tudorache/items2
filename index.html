@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+        -webkit-min-device-pixel-ratio: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+      }
+
+      :root {
+        --primary-color: #93cb52;
+        --secondary-color: darkorchid;
+      }
+
+      .box {
+        width: 7cm;
+        height: 9cm;
+        border: solid 4px #93cb52;
+        border-radius: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-rows: 0.7cm 3.5cm 5cm;
+        justify-items: center;
+        text-align: center;
+        background: black;
+      }
+
+      .container .box-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 5cm;
+        padding: 0px 4px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .box-img {
+        width: 6.5cm;
+        margin: auto;
+        height: 150px;
+      }
+
+      .img4 {
+        background: url("./img/plains/Renfri.jpg") no-repeat center center/cover;
+        width: 6.5cm;
+        height: 150px;
+        margin: auto;
+      }
+
+      .text-primary {
+        color: var(--primary-color);
+      }
+
+      .text-secondary {
+        color: var(--secondary-color);
+      }
+
+      .container {
+        width: 99vw;
+        height: 99vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 25%;
+        justify-content: center;
+      }
+
+      .container h1 {
+        font-size: 18px;
+      }
+
+      .container p {
+        padding-bottom: 5px;
+      }
+      .renfri p {
+        margin-bottom: 10px;
+      }
+
+      .polaris p {
+        margin-bottom: 20px;
+      }
+
+      .lake {
+        margin-bottom: -5px;
+      }
+
+      .polaris {
+        margin-bottom: 10px;
+      }
+
+      .dagger {
+        margin-bottom: -6px;
+      }
+
+      .juice2 {
+        margin-bottom: -6.5px;
+      }
+
+      .woods {
+        border: 4px solid darkorchid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 class="text-primary">Boots Of Speed</h1>
+        <div class="box-img">
+          <img src="./img/plains/bootsofspeed.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            As you defeat the fire lion and the flames grow cold, a pair of
+            boots spring from the ground like magic. You immediately recognize
+            them from an old legend, they are the boots of a druid that could
+            took the shape of any beast and once guarded a vast and beautiful
+            forest at the edge of this plains.
+          </p>
+          <span class="text-primary">
+            +2 movement speed for every roll in Plains of Ithilien and Dark
+            Woods.
+          </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Book of Knowledge</h1>
+        <div class="box-img">
+          <img src="./img/plains/bookofknowledge.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            Stories, past experiences or simple information about every place or
+            monster found in the world, makes this a very valuable book, since
+            it can tell you how to easily defeat even the strongest foes. It not
+            for nothing they say that "Knowledge is Power". Single Use:
+          </p>
+          <span class="text-primary"> Defeat the Hydra with no effort. </span>
+          <span class="text-primary"> +5 Power against any dragon. </span>
+          <span class="text-primary">
+            +4 Power against Lilith, the spider queen.
+          </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Oathkeeper</h1>
+        <div class="box-img">
+          <img src="./img/plains/oathkeeper2.png" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary">
+            The order of the Silver Hand was a group of knights who trained all
+            their lives to hunt and defeat the dragons. This days, only stories
+            remain and the sword of a captain that swore to keep his oath even
+            in death. The sword is glowing and seems to be charged with magic,
+            maybe the captain is still keeping his promise.
+          </p>
+          <span class="text-primary"> +2 Power against monsters and PvP. </span>
+          <span class="text-primary"> +4 Power against any dragon. </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Renfri</h1>
+        <div class="img4"></div>
+        <div class="box-text renfri">
+          <p class="text-secondary">
+            A bad decision after another has put Renfri on the path of thieving
+            and evil deeds. However after learning about your quest, she offers
+            you her help, in the search for forgiveness. A skilled warrior and
+            deadly with a bow, she will now fight by your side in time of need.
+          </p>
+          <span class="text-primary"> +2 Power in PvP. </span>
+          <span class="text-primary"> +3 Power against any monster. </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Elven Dagger</h1>
+        <div class="box-img">
+          <img src="./img/plains/elvendagger.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary dagger">
+            Soon as you see it, you know that this is a dagger from the long
+            lost elves. No one really knows why they are gone or where, but
+            tales of their beauty, remnants of their city and statues can be
+            found all over Ithilien. Some say that they possessed the power over
+            nature and they are still with us in every tree and flower,but
+            nobody knows for sure.
+          </p>
+          <span class="text-primary"> +3 power in PvP. </span>
+          <span class="text-primary"> +3 power against any monster. </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Polaris Amulet</h1>
+        <div class="box-img">
+          <img src="./img/plains/Polaris.Amulet.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary polaris">
+            Born from the light of the north star, many think is a cold and
+            distant light, but those who felt it know it is memory, precious and
+            pure of a promise to return home even from the darkest night, and so
+            the light of Polaris will be your best friend in to the Dark Woods.
+          </p>
+          <span class="text-primary">
+            With Polaris Amulet you will never get lost after every 3 turns in
+            the Dark Woods.
+          </span>
+        </div>
+      </div>
+      <div class="box">
+        <h1 class="text-primary">Lake of Atlantis</h1>
+        <div class="box-img">
+          <img src="./img/plains/map.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-secondary lake">
+            Legend says that long long time ago there was no lake, but a
+            beautiful and prosperous city. The dragons became envious and so
+            with their power and magic submerge the city to be lost forever.Now
+            only the ruins can be found and if you don;t know the way, you can
+            sink your boat before you know it.
+          </p>
+          <span class="text-primary">
+            The map shows you a safe path, thus the ruins can't harm your boat
+            anymore, except the monster fights.
+          </span>
+        </div>
+      </div>
+
+      <!-- *************** -->
+
+      <div class="box woods">
+        <h1 class="text-secondary">Spider Venom</h1>
+        <div class="box-img">
+          <img src="./img/woods/Spider.Venom.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary spider">
+            Spiders like to "play" with their victims, but to do that, they
+            first need to weaken the prey by poisoning it. After defeating the
+            queen, you decide to gather her venom in the hopes that it will be
+            of help later on.
+          </p>
+          <span class="text-secondary poison">
+            Poison a monster by 2 ( +2 power for you in a fight ).Cannot be used
+            in fire land.
+          </span>
+          <span class="text-secondary">
+            PvP : after wining a fight, poison the oponent (-4 movement speed
+            for next 3 rolls)
+          </span>
+        </div>
+      </div>
+      <div class="box woods">
+        <h1 class="text-secondary">Grandma's Juice.</h1>
+        <div class="box-img">
+          <img src="./img/woods/strength.potion.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary juice2">
+            While you where sleeping, grandma took her old book of secrets and
+            started to mix a handful of ingredients that is better you don't
+            know what it was. Although the potion taste like honey it looks more
+            like liquid fire and once consumed you can feel powerful and
+            energized, enough to make any monster to tremble at your sight.
+          </p>
+          <span class="text-secondary"> +2 power in PvP. </span>
+          <span class="text-secondary juice">
+            +3 Power against any monster.
+          </span>
+        </div>
+      </div>
+      <div class="box woods">
+        <h1 class="text-secondary">Bow of Elendil</h1>
+        <div class="box-img">
+          <img src="./img/woods/bow.item.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary bow">
+            This forest was once in the care of the elves and druids.For
+            protection also a hunter roamed this woods before the darkness. A
+            tall and noble warrior,now his legend lies in your hands.
+          </p>
+          <span class="text-secondary"> +2 power in PvP. </span>
+          <span class="text-secondary"> +3 power against any monster. </span>
+        </div>
+      </div>
+
+      <div class="box woods">
+        <h1 class="text-secondary">Balrog Scale</h1>
+        <div class="box-img">
+          <img src="./img/woods/balrog.scale.png" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary">
+            Legend says that a group of brave heroes fought the fire dragon.
+            Although defeated, they managed to harm the Ashbringer, making him
+            to lose one scale. A skilled blacksmith then turned it into an
+            amulet. Warm to the touch it seems you can never get cold while you
+            wear it.
+          </p>
+          <span class="text-secondary">
+            The amulet protects you from the cold effects of the ice region
+            (Cancel the speed penalty).
+          </span>
+        </div>
+      </div>
+      <div class="box woods">
+        <h1 class="text-secondary">Strange Mushroom</h1>
+        <div class="box-img">
+          <img src="./img/woods/strange.mushroom - Copy.jpg" alt="" />
+        </div>
+        <div class="box-text">
+          <p class="text-primary">
+            Having heard the stories of what beautiful and good place the forest
+            once was, you find it hard to believe that now everything is tainted
+            with darkness and is hard to know anymore what is good or bad in
+            this place.
+          </p>
+          <span class="text-secondary">
+            Roll 5 or less and you get poisoned by 2. ( -2 Power for you in a
+            fight )
+          </span>
+          <span class="text-secondary">
+            Roll 6 or higher and you get strengthened by 3. (+3 Power)
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
